@@ -1,0 +1,33 @@
+.landing-bg {
+  height: 100%;
+  background: url('../img/background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.landing {
+  .landing-content {
+    @extend .container;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: $primary-font;
+    text-align: center;
+    
+    h1 {
+      margin: 20% 0 0 0;
+     font-size: 72px
+    }
+    h2 {
+      font-size: 24px;
+      margin: 0px 0 ;
+    }
+  }
+  .nav-items {
+    display:flex;
+    justify-content: space-around;
+  }
+
+}
