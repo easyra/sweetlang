@@ -27,8 +27,14 @@
   }
   .nav-content {
     text-transform: uppercase;
-    .nav-title {
-      display: none;
+    .nav-titles {
+      li {
+              display: none;
+      }
+      .active {
+        display: inline-block;
+      }
+
     }
   }
   .nav-items {    display:flex;

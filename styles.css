@@ -76,8 +76,10 @@ body, html {
     margin: 0px 0; }
 .landing .nav-content {
   text-transform: uppercase; }
-  .landing .nav-content .nav-title {
+  .landing .nav-content .nav-titles li {
     display: none; }
+  .landing .nav-content .nav-titles .active {
+    display: inline-block; }
 .landing .nav-items {
   display: flex;
   justify-content: space-around; }
