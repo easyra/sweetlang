@@ -48,7 +48,8 @@ table {
 body, html {
   height: 100%;
   margin: 0;
-  line-height: 1.25; }
+  line-height: 1.25;
+  box-sizing: border-box; }
 
 .container, .landing .landing-content {
   margin: 0 auto;
@@ -98,5 +99,12 @@ h3, h4, h5, h6, li {
       transform: scale(1.1); }
     .landing .nav-items .nav-item:active {
       transform: scale(1); }
+
+.latest-news {
+  padding: 15px;
+  margin: 15px 0;
+  width: 500px;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.4); }
 
 /*# sourceMappingURL=styles.css.map */
