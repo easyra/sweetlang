@@ -69,13 +69,26 @@ body, html {
   color: #fff;
   text-align: center; }
   .landing .landing-content h1 {
-    margin: 20% 0 0 0;
+    margin: 30% 0 0 0;
     font-size: 72px; }
   .landing .landing-content h2 {
     font-size: 24px;
     margin: 0px 0; }
+.landing .nav-content {
+  text-transform: uppercase; }
+  .landing .nav-content .nav-title {
+    display: none; }
 .landing .nav-items {
   display: flex;
   justify-content: space-around; }
+  .landing .nav-items .nav-item {
+    text-transform: uppercase;
+    margin: 10px;
+    cursor: pointer;
+    transition: all; }
+    .landing .nav-items .nav-item:hover {
+      transform: scale(1.1); }
+    .landing .nav-items .nav-item:active {
+      transform: scale(1); }
 
 /*# sourceMappingURL=styles.css.map */

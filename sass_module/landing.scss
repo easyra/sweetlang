@@ -17,7 +17,7 @@
     text-align: center;
     
     h1 {
-      margin: 20% 0 0 0;
+      margin: 30% 0 0 0;
      font-size: 72px
     }
     h2 {
@@ -25,9 +25,27 @@
       margin: 0px 0 ;
     }
   }
-  .nav-items {
-    display:flex;
+  .nav-content {
+    text-transform: uppercase;
+    .nav-title {
+      display: none;
+    }
+  }
+  .nav-items {    display:flex;
     justify-content: space-around;
+  
+    .nav-item {
+      text-transform: uppercase;
+      margin: 10px;
+      cursor: pointer;
+      transition: all;
+      &:hover {
+        transform: scale(1.1)
+      }
+      &:active {
+        transform: scale(1)
+      }
+    }
   }
 
 }
