@@ -61,6 +61,10 @@ h1, h2 {
 h3, h4, h5, h6, li {
   font-family: "Roboto", sans-serif; }
 
+a {
+  text-decoration: color;
+  color: inherit; }
+
 .landing-bg {
   height: 100%;
   background: url("../img/background.jpg");
@@ -93,6 +97,7 @@ h3, h4, h5, h6, li {
   .landing .nav-items .nav-item {
     text-transform: uppercase;
     margin: 10px;
+    text-decoration: none;
     cursor: pointer;
     transition: all; }
     .landing .nav-items .nav-item:hover {
