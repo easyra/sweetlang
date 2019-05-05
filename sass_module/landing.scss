@@ -1,66 +1,106 @@
-.landing-bg {
-  height: 100%;
-  background: url('../img/background.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .landing {
-  .landing-content {
-    @extend .container;
+  width: 100%;
+  height: 100%;
+  .content {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    color: $primary-font;
-    text-align: center;
+    height: 100%;
+    .picture {
+      height: 500px;
+      width: 400px;
+      background: url('../img/background.jpg');
+      background-position: left;
+    }
 
-    h1 {
-      margin: 30% 0 0 0;
-      font-size: 72px;
-    }
-    h2 {
-      font-size: 24px;
-      margin: 0px 0;
-    }
-  }
-  .nav-content {
-    text-transform: uppercase;
-    .nav-titles {
-      li {
-        display: none;
-      }
-      .active {
-        display: inline-block;
-      }
-    }
-  }
-  .nav-items {
-    display: flex;
-    justify-content: space-around;
+    .cta {
+      width: 500px;
+      height: 500px;
+      background: url('../img/backgroundcontent.jpg');
+      background-position: center;
+      background-size: cover;
 
-    .nav-item {
-      text-transform: uppercase;
-      margin: 10px;
-      text-decoration: none;
-      
-      cursor: pointer;
-      transition: all;
-      &:hover {
-        transform: scale(1.1);
+      display: flex;
+      margin: 20% 0;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      .text {
+        color: #fff;
+        margin: 25% 0 0 0;
+        cursor: default;
+        h1 {
+          font-size: 72px;
+        }
+        h2 {
+          font-size: 24px;
+        }
       }
-      &:active {
-        transform: scale(1);
-      }
+    }
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 500px;
+        .art-picture {
+          height: 250px;
+          width: 250px;
+          overflow: hidden;
+          background: rgba(199, 129, 117, 0.4);
+          background: rgba(199, 129, 117, 0.4) url('https://scontent-lax3-1.cdninstagram.com/vp/c0c1ad9c92f63708a7d3fe8c4d104dd4/5D74F1B4/t51.2885-15/e35/56711298_2474478462571077_7856320453608681362_n.jpg?_nc_ht=scontent-lax3-1.cdninstagram.com');
+          background-position: center;
+          background-size: contain;
+          background-blend-mode: multiply;
+          transition: all .2s linear;
+          &:hover{
+            background: url('https://scontent-lax3-1.cdninstagram.com/vp/c0c1ad9c92f63708a7d3fe8c4d104dd4/5D74F1B4/t51.2885-15/e35/56711298_2474478462571077_7856320453608681362_n.jpg?_nc_ht=scontent-lax3-1.cdninstagram.com');
+            background-position: center;
+            background-size: contain;
+          }
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          
+        }
+   
     }
   }
 }
+header {
+  margin: 0 0 0 0;
+.nav-items {
+  display: flex;
+  color: #fff;
+  .nav-item {
+    margin: 5px 5px;
+    transition: all 0.2s;
+    &:hover {
+      transform: scale(1.1);
+    }
+    &:active {
+      transform: scale(1);
+    }
+  }
+}
+.nav-titles {
+  margin: 5px 0 0 0;
+  color: #fff;
+  text-transform: uppercase;
+  li {
+    display: none;
+  }
+  .active {
+    display: inline-block;
+  }
+}
+}
 
-.latest-news {
-  padding: 15px;
-  margin: 15px 0;
-  width: 500px;
-  text-align: left;
-  background: rgba($color: #000000, $alpha: 0.4);
+.bg {
+  background: url('../img/backgroundbody.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
