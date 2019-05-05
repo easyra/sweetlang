@@ -11,7 +11,7 @@
     .picture {
       position: relative;
       height: 100%;
-      width: 50%;
+      width: 44%;
       background: url('../img/background.jpg');
       background-position: center;
       background-size:cover;
@@ -22,8 +22,10 @@
 
     .cta {
       position: relative;
-
-      width: 50%;
+      @media screen and (max-width: 800px){
+        margin: 0;
+      }
+      width: 56%;
       height: 100%;
      
       background-position: center;
@@ -81,20 +83,27 @@ header {
 }
 
 }
+.cta-title{
+  margin: 5% 0 5px 0;
+  font-size: 36px;
+  color: #AB3F3A;
+}
 .nav-items {
-  margin: 35px 0 5px 0;
+  
   display: flex;
+  color: #AB3F3A;
   .nav-item {
     margin: 0 5px;
     transition: all 0.2s;
     &:hover {
-      color: #fff;
+      color: #F78A86;
     }
   }
 }
 .nav-titles {
   margin: 5px 0 0 0;
   text-transform: uppercase;
+  color: #AB3F3A;
   li {
     display: none;
   }
@@ -104,7 +113,7 @@ header {
 }
 
 .bg {
-  // background: linear-gradient(to right,rgba(52,90,65,0.3),rgba(182, 199, 181, 0.3)), url('../img/backgroundbody.jpg');
+  background:#86F7AF; //linear-gradient(to right,rgba(175,237,142,5),rgba(205, 255, 179, 0.5)), ; //, url('../img/backgroundbody.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

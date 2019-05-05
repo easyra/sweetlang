@@ -50,7 +50,7 @@ body, html {
   margin: 0;
   line-height: 1.25;
   box-sizing: border-box;
-  background: #dbead3; }
+  background: #D1F9DF; }
 
 * {
   box-sizing: border-box; }
@@ -81,7 +81,7 @@ a {
     .landing .content .picture {
       position: relative;
       height: 100%;
-      width: 50%;
+      width: 44%;
       background: url("../img/background.jpg");
       background-position: center;
       background-size: cover; }
@@ -90,7 +90,7 @@ a {
           display: none; } }
     .landing .content .cta {
       position: relative;
-      width: 50%;
+      width: 56%;
       height: 100%;
       background-position: center;
       background-size: cover;
@@ -99,6 +99,9 @@ a {
       justify-content: center;
       flex-direction: column;
       text-align: center; }
+      @media screen and (max-width: 800px) {
+        .landing .content .cta {
+          margin: 0; } }
       .landing .content .cta .text {
         cursor: default; }
         .landing .content .cta .text h1 {
@@ -131,24 +134,31 @@ header {
       header .nav-bar-items .nav-bar-item:active {
         color: #000; }
 
+.cta-title {
+  margin: 5% 0 5px 0;
+  font-size: 36px;
+  color: #AB3F3A; }
+
 .nav-items {
-  margin: 35px 0 5px 0;
-  display: flex; }
+  display: flex;
+  color: #AB3F3A; }
   .nav-items .nav-item {
     margin: 0 5px;
     transition: all 0.2s; }
     .nav-items .nav-item:hover {
-      color: #fff; }
+      color: #F78A86; }
 
 .nav-titles {
   margin: 5px 0 0 0;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #AB3F3A; }
   .nav-titles li {
     display: none; }
   .nav-titles .active {
     display: inline-block; }
 
 .bg {
+  background: #86F7AF;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
