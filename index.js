@@ -54,20 +54,19 @@ document.querySelector('.nav-items').addEventListener('mouseleave', e => {
     navTitle.classList.remove('active');
   });
 });
+for (let i = 0; i < 25; i++) {
+  const figure = document.createElement('figure');
+  figure.classList.add('imghvr-shutter-in-vert');
 
-let left = 10;
+  const figcaption = document.createElement('figcaption');
 
-document.addEventListener('keydown', e => {
-  console.log(e.keyCode);
-  if (e.keyCode == 37) {
-    const content = document.querySelector('.content');
-    left = left - 5;
-    content.style.left = left + '%';
-  } else if (e.keyCode == 39) {
-    const content = document.querySelector('.content');
-    left = left + 4;
-    content.style.left = left + '%';
-  }
-});
+  const instagram = document.createElement('i');
+  const fullscreen = document.createElement('i');
 
-console.log(document.querySelector('.nav-items'));
+  const img = document.createElement('img');
+  img.src =
+    'https://scontent-lax3-1.cdninstagram.com/vp/ff4c8f5494f73bfaac7202223783427a/5D76B514/t51.2885-15/e35/57451435_414306286014982_854558080607971068_n.jpg?_nc_ht=scontent-lax3-1.cdninstagram.com';
+  img.classList.add('picture');
+  img.alt = 'The experimental art of artist Sweet Lang | Langston Davis';
+  document.querySelector('.gallery .content').appendChild(img);
+}

@@ -3,8 +3,7 @@ body, html {
   margin: 0;
   line-height: 1.25;
   box-sizing: border-box;
-  background: #ae3143;
-  overflow: hidden;
+  background:#dbead3;
 }
 * {
   box-sizing: border-box;
@@ -16,15 +15,15 @@ body, html {
 }
 
 h1,h2 {
-  font-family: 'Merriweather', serif;
+  font-family: 'Permanent Marker', cursive;
 }
 
 h3,h4,h5,h6,li,p{
-  font-family: 'Roboto', sans-serif
+  font-family: 'Permanent Marker', cursive;
 }
 
 a{
-  text-decoration: color;
+  text-decoration: none;
   color: inherit;
 }
 
