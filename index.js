@@ -54,7 +54,7 @@ document.querySelector('.nav-items').addEventListener('mouseleave', e => {
     navTitle.classList.remove('active');
   });
 });
-for (let i = 0; i < 25; i++) {
+for (let i = 0; i < 21; i++) {
   const figure = document.createElement('figure');
   figure.classList.add('imghvr-shutter-in-vert');
 
