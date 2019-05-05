@@ -55,4 +55,19 @@ document.querySelector('.nav-items').addEventListener('mouseleave', e => {
   });
 });
 
+let left = 10;
+
+document.addEventListener('keydown', e => {
+  console.log(e.keyCode);
+  if (e.keyCode == 37) {
+    const content = document.querySelector('.content');
+    left = left - 5;
+    content.style.left = left + '%';
+  } else if (e.keyCode == 39) {
+    const content = document.querySelector('.content');
+    left = left + 4;
+    content.style.left = left + '%';
+  }
+});
+
 console.log(document.querySelector('.nav-items'));
