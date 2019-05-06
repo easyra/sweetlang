@@ -45,12 +45,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
   line-height: 1.25;
   box-sizing: border-box;
-  background: #D1F9DF;
+  background: #d1f9df;
   overflow-x: hidden; }
 
 * {
@@ -60,10 +61,16 @@ body, html {
   margin: 0 auto;
   width: 1000px; }
 
-h1, h2 {
+h1,
+h2 {
   font-family: 'Permanent Marker', cursive; }
 
-h3, h4, h5, h6, li, p {
+h3,
+h4,
+h5,
+h6,
+li,
+p {
   font-family: 'Permanent Marker', cursive; }
 
 a {
@@ -78,7 +85,8 @@ a {
     justify-content: center;
     color: #000;
     max-height: 100vh;
-    height: 100%; }
+    height: 100%;
+    background: #86f7af; }
     .landing .content .picture {
       position: relative;
       height: 100%;
@@ -138,28 +146,28 @@ header {
 .cta-title {
   margin: 5% 0 5px 0;
   font-size: 36px;
-  color: #AB3F3A; }
+  color: #ab3f3a; }
 
 .nav-items {
   display: flex;
-  color: #AB3F3A; }
+  color: #ab3f3a; }
   .nav-items .nav-item {
     margin: 0 5px;
     transition: all 0.2s; }
     .nav-items .nav-item:hover {
-      color: #F78A86; }
+      color: #f78a86; }
 
 .nav-titles {
   margin: 5px 0 0 0;
   text-transform: uppercase;
-  color: #AB3F3A; }
+  color: #ab3f3a; }
   .nav-titles li {
     display: none; }
   .nav-titles .active {
     display: inline-block; }
 
 .bg {
-  background: #86F7AF;
+  background: #86f7af;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }

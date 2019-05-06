@@ -1,9 +1,10 @@
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
   line-height: 1.25;
   box-sizing: border-box;
-  background:#D1F9DF;
+  background: #d1f9df;
   overflow-x: hidden;
 }
 * {
@@ -15,16 +16,21 @@ body, html {
   width: 1000px;
 }
 
-h1,h2 {
+h1,
+h2 {
   font-family: 'Permanent Marker', cursive;
 }
 
-h3,h4,h5,h6,li,p{
+h3,
+h4,
+h5,
+h6,
+li,
+p {
   font-family: 'Permanent Marker', cursive;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
-
