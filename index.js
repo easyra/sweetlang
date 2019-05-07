@@ -7,6 +7,7 @@ navItems.forEach(node => {
     e => {
       e.stopPropagation();
       const id = e.currentTarget.id;
+      document.querySelector('.last-title').classList.remove('active');
       navTitles.forEach((navTitle, index) => {
         if (index == id) {
           navTitle.classList.add('active');
@@ -23,6 +24,7 @@ document.querySelector('.nav-items').addEventListener('mouseleave', e => {
   navTitles.forEach(navTitle => {
     navTitle.classList.remove('active');
   });
+  document.querySelector('.last-title').classList.add('active');
 });
 
 function createPicture(img) {

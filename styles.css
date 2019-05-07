@@ -164,6 +164,8 @@ header {
   color: #ab3f3a; }
   .nav-titles li {
     display: none; }
+  .nav-titles .last-title {
+    color: #86f7af; }
   .nav-titles .active {
     display: inline-block; }
     @media screen and (max-width: 500px) {

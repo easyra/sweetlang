@@ -107,6 +107,9 @@ header {
   li {
     display: none;
   }
+  .last-title {
+    color: #86f7af;
+  }
   .active {
     display: inline-block;
     @media screen and (max-width: 500px) {
