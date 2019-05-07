@@ -11,7 +11,7 @@
     .picture {
       position: relative;
       height: 100%;
-      width: 44%;
+      width: 56%;
       background: url('https://f4.bcbits.com/img/0005578486_10.jpg');
       background-position: center;
       background-size: cover;
@@ -24,8 +24,9 @@
       position: relative;
       @media screen and (max-width: 800px) {
         margin: 0;
+        width: 100%;
       }
-      width: 56%;
+      width: 44%;
       height: 100%;
 
       background-position: center;
@@ -102,11 +103,15 @@ header {
   margin: 5px 0 0 0;
   text-transform: uppercase;
   color: #ab3f3a;
+
   li {
     display: none;
   }
   .active {
     display: inline-block;
+    @media screen and (max-width: 500px) {
+      display: none;
+    }
   }
 }
 
@@ -118,7 +123,7 @@ header {
 }
 
 .gallery {
-  max-width: 950px;
+  max-width: 900px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -135,9 +140,81 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
     .picture {
+      position: relative;
       width: 300px;
       height: 300px;
-      margin: 10px 0;
+      background: linear-gradient(
+        0deg,
+        rgba(134, 247, 175, 1) 0%,
+        rgba(134, 247, 175, 1) 35%,
+        rgba(209, 249, 223, 1) 100%
+      );
+
+      &:hover {
+        img {
+          opacity: 0.3;
+        }
+        .links {
+          opacity: 1;
+        }
+      }
+      img {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: 0.5s ease;
+        backface-visibility: hidden;
+        background: #000;
+      }
+      .links {
+        cursor: pointer;
+        transition: 0.5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+        i {
+          opacity: 1;
+          margin: 0 10px;
+          padding: 10px;
+          background: #ab3f3a;
+          border-radius: 50%;
+          color: #fff;
+          transition: all 0.2s;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
     }
   }
 }
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  &.active {
+    display: inline;
+  }
+  .content {
+    margin: 5% auto; /* 15% from the top and centered */
+    max-width: 40%; /* Could be more or less, depending on screen size */
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+/* Modal Content/Box */
